@@ -1,0 +1,29 @@
+- name: Alex LaFroscia
+  topic:
+    name: WebSockets
+  image: alexlafroscia.jpeg
+  description: Donec ligula sem, hendrerit non tincidunt venenatis, blandit ac
+    nisi.
+
+- name: Alex LaFroscia
+  topic:
+    name: WebSockets
+  image: alexlafroscia.jpeg
+  description: Donec ligula sem, hendrerit non tincidunt venenatis, blandit ac
+    nisi.
+
+- name: Alex LaFroscia
+  topic:
+    name: WebSockets
+    site: socket.io
+  image: alexlafroscia.jpeg
+  site: alexlafroscia.com
+  description: Donec ligula sem, hendrerit non tincidunt venenatis, blandit ac
+    nisi.
+
+- name: Alex LaFroscia
+  topic:
+    name: WebSockets
+  image: alexlafroscia.jpeg
+  description: Donec ligula sem, hendrerit non tincidunt venenatis, blandit ac
+    nisi.

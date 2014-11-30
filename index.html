@@ -1,0 +1,52 @@
+---
+layout: home
+---
+
+<div class="homepage">
+  <section class="header">
+    <h1>{{ site.title }}</h1>
+    <hr />
+    <p>{{ site.description }}</p>
+  </section>
+
+  <section class="details">
+    <div class="content-box">
+      <h2>Location</h2>
+      <p>This is some test text. This is some test text.</p>
+    </div>
+    <div class="content-box">
+      <h2>Location</h2>
+      <p>This is some test text. This is some test text.</p>
+    </div>
+    <div class="content-box">
+      <h2>Location</h2>
+      <p>This is some test text. This is some test text.</p>
+    </div>
+  </section>
+
+  <section class="speakers">
+    <h2>Speakers</h2>
+
+    {% for speaker in site.data.speakers %}
+
+      <div class="speaker">
+        <img src="/img/{{ speaker.image }}" />
+        <h3>
+          {% if speaker.site %}
+            <a href="http://{{ speaker.site }}">{{ speaker.name}}</a>
+          {% else %}
+            {{ speaker.name }}
+          {% endif %}
+        </h3>
+        {% if speaker.topic.site %}
+          Topic: <a href="http://{{ speaker.topic.site }}">{{ speaker.topic.name }}</a>
+        {% else %}
+          Topic: {{ speaker.topic.name }}
+        {% endif %}
+      </div>
+
+    {% endfor %}
+
+    <a class="button clearfix" href="/speakers/">More Details</a>
+  </section>
+</div>
