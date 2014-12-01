@@ -19,13 +19,14 @@ permalink: /speakers/
       </h2>
       <span class="topic">
         {% if speaker.topic.site %}
-          Topic: <a href="http://{{ speaker.topic.site }}">
+          Topic: <a href="http://{{ speaker.topic.site }}" target="_blank">
             {{ speaker.topic.name }} <i class="fa fa-link"></i>
           </a>
         {% else %}
           Topic: {{ speaker.topic.name }}
         {% endif %}
       </span>
+      <p>{{ speaker.description }}</p>
     </div>
   </div>
 

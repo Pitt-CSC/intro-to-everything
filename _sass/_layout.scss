@@ -303,6 +303,10 @@
 }
 
 .speaker-large {
+  $img-size: 100px;
+  $img-size-mini: 50px;
+  $title-line-height: 48px;
+
   overflow: hidden;
   margin: {
     bottom: 2em;
@@ -311,26 +315,53 @@
 
   .wrap {
     float: left;
+    width: calc(100% - #{$img-size} - #{$img-size / 10});
   }
 
   img {
-    $size: 100px;
-    height: $size;
-    width: $size;
-    border-radius: $size / 2;
+    height: $img-size;
+    width: $img-size;
+    border-radius: $img-size / 2;
     float: left;
-    margin-right: 10px;
+    margin-right: $img-size / 10;
+
+    @include media-query($on-palm) {
+      height: $img-size-mini;
+      width: $img-size-mini;
+      border-radius: $img-size-mini / 2;
+      margin-right: $img-size-mini / 10;
+    }
   }
 
   h2 {
+    float: left;
     font-size: 2em;
     margin: {
       bottom: 5px;
+    }
+    line-height: $title-line-height;
+
+    @include media-query($on-palm) {
+      font-size: 1.6em;
+      margin-bottom: 0;
     }
   }
 
   .topic {
     cursor: text;
     font-size: 1.5em;
+    float: right;
+    line-height: $title-line-height;
+
+    @include media-query($on-palm) {
+      float: left;
+      font-size: 1.2em;
+      line-height: normal;
+      margin-bottom: 5px;
+    }
+  }
+
+  p {
+    clear: both;
   }
 }
