@@ -171,7 +171,7 @@
     &.header {
       padding: 18%;
 
-      background-image: url('/intro-to-everything/img/bridge.gif');
+      background-image: url('../img/bridge.gif');
       background-size: cover;
 
       @include media-query($on-palm) {
