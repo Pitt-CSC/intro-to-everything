@@ -2,17 +2,16 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
+        <h3>{{ site.title }}</h3>
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
 
       <div class="footer-col  footer-col-2">
+        <h3>Links</h3>
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -48,7 +47,16 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+        <h3>Pages</h3>
+        <ul>
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li>
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       </div>
     </div>
 
