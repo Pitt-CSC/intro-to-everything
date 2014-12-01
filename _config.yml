@@ -6,8 +6,8 @@ description: > # this means to ignore newlines until "baseurl:"
   needs a starting place. Join us for the University of Pittsburgh first-ever
   Intro to Everything, where you can take the first steps toward learning about
   nearly anything you like.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/into-to-everything/" # the subpath of your site, e.g. /blog/
+url: "http://pittcsc.org" # the base hostname & protocol for your site
 twitter_username: pittcsc
 github_username:  Pitt-CSC
 
