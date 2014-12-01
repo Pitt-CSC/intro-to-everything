@@ -223,3 +223,11 @@ a.button {
         }
     }
 }
+
+/**
+ * Fontawesome Overrides
+ */
+a > i.fa-link {
+  font-size: .8em;
+  opacity: 0.5;
+}

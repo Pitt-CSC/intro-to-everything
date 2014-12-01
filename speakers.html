@@ -6,19 +6,22 @@ permalink: /speakers/
 
 {% for speaker in site.data.speakers %}
 
-  <div class="speaker">
+  <div class="speaker-large">
     <img src="{{ site.baseurl }}/img/{{ speaker.image }}" />
     <div class="wrap">
       <h2>
         {% if speaker.site %}
-          <a href="http://{{ speaker.site }}">{{ speaker.name}}</a>
+          <a href="http://{{ speaker.site }}">{{ speaker.name}}
+            <i class="fa fa-link"></i></a>
         {% else %}
           {{ speaker.name }}
         {% endif %}
       </h2>
       <span class="topic">
         {% if speaker.topic.site %}
-          Topic: <a href="http://{{ speaker.topic.site }}">{{ speaker.topic.name }}</a>
+          Topic: <a href="http://{{ speaker.topic.site }}">
+            {{ speaker.topic.name }} <i class="fa fa-link"></i>
+          </a>
         {% else %}
           Topic: {{ speaker.topic.name }}
         {% endif %}

@@ -33,13 +33,16 @@ layout: home
         <img src="{{ site.baseurl }}/img/{{ speaker.image }}" />
         <h2>
           {% if speaker.site %}
-            <a href="http://{{ speaker.site }}">{{ speaker.name}}</a>
+            <a href="http://{{ speaker.site }}">{{ speaker.name}}
+              <i class="fa fa-link"></i></a>
           {% else %}
             {{ speaker.name }}
           {% endif %}
         </h2>
         {% if speaker.topic.site %}
-          Topic: <a href="http://{{ speaker.topic.site }}">{{ speaker.topic.name }}</a>
+          Topic: <a href="http://{{ speaker.topic.site }}">
+            {{ speaker.topic.name }} <i class="fa fa-link"></i>
+          </a>
         {% else %}
           Topic: {{ speaker.topic.name }}
         {% endif %}
