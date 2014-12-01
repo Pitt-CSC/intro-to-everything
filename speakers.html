@@ -4,3 +4,26 @@ title: Speakers
 permalink: /speakers/
 ---
 
+{% for speaker in site.data.speakers %}
+
+  <div class="speaker">
+    <img src="{{ site.baseurl }}/img/{{ speaker.image }}" />
+    <div class="wrap">
+      <h2>
+        {% if speaker.site %}
+          <a href="http://{{ speaker.site }}">{{ speaker.name}}</a>
+        {% else %}
+          {{ speaker.name }}
+        {% endif %}
+      </h2>
+      <span class="topic">
+        {% if speaker.topic.site %}
+          Topic: <a href="http://{{ speaker.topic.site }}">{{ speaker.topic.name }}</a>
+        {% else %}
+          Topic: {{ speaker.topic.name }}
+        {% endif %}
+      </span>
+    </div>
+  </div>
+
+{% endfor %}
