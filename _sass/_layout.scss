@@ -167,7 +167,7 @@
     &.header {
       padding: 18%;
 
-      background-image: url(/img/bridge.png);
+      background-image: url({{site.url}}{{site.baseurl}}/img/bridge.png);
       background-size: cover;
 
       @include media-query($on-palm) {
