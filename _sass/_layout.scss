@@ -221,12 +221,25 @@
         float: left;
         width: 33.3333333333333333333333333%;
 
-        @include media-query($on-palm) {
-          width: 100%;
-        }
-
         p {
           text-align: justify;
+        }
+
+        @include media-query($on-palm) {
+          width: 100%;
+
+          p {
+            text-align: center;
+          }
+
+          &:after {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background: white;
+            position: absolute;
+            margin-left: -40%;
+          }
         }
       }
     }

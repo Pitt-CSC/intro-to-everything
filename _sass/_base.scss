@@ -187,19 +187,22 @@ pre {
  * Button
  */
 a.button {
-  display: block;
-  width: 100px;
   padding: 10px;
   text-align: center;
   color: white;
   background-color: $pitt-blue;
-  margin: 0 auto;
-  clear: both;
   border-radius: 7px;
 
   &:hover {
     text-decoration: none;
     background-color: lighten($pitt-blue, 10);
+  }
+
+  &.block {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    clear: both;
   }
 }
 
