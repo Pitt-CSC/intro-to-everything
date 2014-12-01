@@ -309,12 +309,31 @@
 
   overflow: hidden;
   margin: {
-    bottom: 2em;
+    bottom: 3em;
   }
   clear: both;
 
+  &:nth-child(2n) {
+    .wrap {
+      float: left;
+    }
+    img {
+      float: right;
+      margin-left: $img-size / 10;
+    }
+  }
+
+  &:nth-child(2n+1) {
+    .wrap {
+      float: right;
+    }
+    img {
+      float: left;
+      margin-right: $img-size / 10;
+    }
+  }
+
   .wrap {
-    float: left;
     width: calc(100% - #{$img-size} - #{$img-size / 10});
   }
 
@@ -322,8 +341,6 @@
     height: $img-size;
     width: $img-size;
     border-radius: $img-size / 2;
-    float: left;
-    margin-right: $img-size / 10;
 
     @include media-query($on-palm) {
       height: $img-size-mini;
