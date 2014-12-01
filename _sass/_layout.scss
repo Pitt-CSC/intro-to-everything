@@ -269,7 +269,10 @@
   }
 
   h2 {
-    margin-left: $padding-size;
+    margin: {
+      left: $padding-size;
+      bottom: 5px;
+    }
   }
 
   .speaker {
