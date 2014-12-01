@@ -343,7 +343,10 @@
 
     @include media-query($on-palm) {
       font-size: 1.6em;
+      line-height: 1.6em;
       margin-bottom: 0;
+      width: 100%;
+      vertical-align: top;
     }
   }
 
