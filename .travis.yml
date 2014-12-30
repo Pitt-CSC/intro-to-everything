@@ -1,0 +1,8 @@
+language: node_js
+script:
+  - echo "Thanks for the update!"
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+env:
+  global:
+    secure: "i5O+NtMWkfqDBKphnv5Wx5RZDj2aRgPed1eBYifq83nH/kbySizsHaBtGYOAR/DYzPSjzRAVePuzizxRTmJK4QzIOyP+j1wayJCpM2MxjyvEy6dPFWOUEs9ehrfiw7RpoRrCJLrBzd2pRbgo3xDQTo5o48Pyac3cwOC8qvhJPEQ="
