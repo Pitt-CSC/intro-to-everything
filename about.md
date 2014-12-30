@@ -1,11 +1,7 @@
 ---
 layout: page
-title: About
+title: About Our Program
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Intro to Everything is a brand new event at the University of Pittsburgh, hosted by [Pitt's new Computer Science Club](http://pittcsc.org/).  This two-day event will provide a series of introductory talks on a wide range of topics, covering everything from web app development to photography.
