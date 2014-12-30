@@ -25,13 +25,8 @@ displayed in production.
 
 ## Deployment
 
-Since we're hosting on Github Pages, you can do the following to push to the
-actual production version of the site:
+1. Push to `master` at `Pitt-CSC/intro-to-everything`
+2. ???
+3. Profit!
 
-```
-git push origin master:gh-pages
-```
-
-Which will push your local `master` branch to the remote `gh-pages` branch,
-assuming that you have the Github repo set up as the `origin` remote.
-
+Thanks to the wonderful [Steve Klabnik](https://github.com/steveklabnik), who detailed the steps to deploy a project like this to Github Pages using [Travis CI](https://travis-ci.org/Pitt-CSC/intro-to-everything), that's it. Travis automatically pulls the project, builds it, and then pushes the built project over to the `gh-pages` branch. You can find his instructions [here](https://github.com/steveklabnik/automatically_update_github_pages_with_travis_example).
