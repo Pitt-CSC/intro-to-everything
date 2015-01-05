@@ -2,10 +2,9 @@
 title: Intro to Everything
 email: pittcsc@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Everyone who has acheived greatness was once a beginner, and every beginner
-  needs a starting place. Join us for the University of Pittsburgh's first-ever
-  Intro to Everything, where you can take the first steps toward learning about
-  nearly anything you like.
+  Join us for two days of introductory workshops on design tools, programming languages, 
+  web technologies, and whatever else we can cram into a two-hour talk. Come for one 
+  workshop or stay for six. Novice or veteran, life-long techie or career changer: all are welcome.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://introtoeverything.io" # the base hostname & protocol for your site
 twitter_username: pittcsc
