@@ -2,8 +2,8 @@
 title: Intro to Everything
 email: pittcsc@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Join us for two days of introductory workshops on design tools, programming languages, 
-  web technologies, and whatever else we can cram into a two-hour talk. Come for one 
+  Join us for two days of introductions to design tools, programming languages, 
+  web technologies, and whatever else we can cram into a two-hour workshop. Come for one 
   workshop or stay for six. Novice or veteran, life-long techie or career changer: all are welcome.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://introtoeverything.io" # the base hostname & protocol for your site
