@@ -13,22 +13,22 @@ layout: home
     <div class="content-box">
       <i class="fa fa-map-marker"></i>
       <h2>Location</h2>
-      <p>Intro to Everything will take place on Pitt's campus</p>
+      <p>The University of Pittsburgh</p>
     </div>
     <div class="content-box">
       <i class="fa fa-clock-o"></i>
       <h2>Date</h2>
       <p>
-        The event will take place on March 6th and 7th, although that is liable
-        to change
+        TBD
       </p>
     </div>
     <div class="content-box">
       <i class="fa fa-graduation-cap"></i>
-      <h2>Should I go?</h2>
+      <h2>Who Is It For?</h2>
       <p>
-        Yes! If you have any interest in technology, there will be something
-        here for you! Everyone is here to learn.
+        Anyone who wants to learn a new technology.
+        Students, professionals, and hobbyists are
+        all welcome.
       </p>
     </div>
   </section>
@@ -57,8 +57,12 @@ layout: home
         {% endif %}
       </div>
 
+    {% else %}
+      <p>Check back soon to see who will be introducing what.</p>
     {% endfor %}
 
-    <a class="button block" href="{{ site.baseurl }}/speakers/">More Speaker Details</a>
+    {% if site.data.speakers %}
+      <a class="button block" href="{{ site.baseurl }}/speakers/">More Speaker Details</a>
+    {% endif %}
   </section>
 </div>
